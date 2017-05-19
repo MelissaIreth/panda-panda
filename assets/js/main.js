@@ -13,11 +13,16 @@ pictures.forEach(function(cv){
 	fotos.appendChild(imagen);
 });
 
-*/
+<i class="fa fa-times" aria-hidden="true"></i>
 
-	/*<i class="fa fa-times" aria-hidden="true"></i>*/
 	var boton =	document.getElementById("mostrar");
-	boton.addEventListener("click", function(){
-		this.classList.toggle("texto2");
-		});
+	boton.addEventListener("click", function(e){
+		e.classList.toggle("texto2");
+		});*/
+var texto=document.getElementById("texto2")
 	
+var algo = document.getElementById("mostrar");
+algo.addEventListener("click", function(){
+
+texto.remove(algo)
+});
