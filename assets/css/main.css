@@ -21,14 +21,12 @@ nav li{
 	text-decoration: underline;
 }
 
-#imagenes{
-	margin-left: 250px;
-}
-
-.panditas{
-	margin: 20px 20px;
+.pandas{
+	margin: 20px;
 	border: 5px solid #575757;
-	display: inline;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
 }
 
 .pand{
@@ -46,6 +44,7 @@ nav li{
 	float: left;
 	width: 500px;
 	margin: 50px 10px 30px 100px;
+	text-align: justify;
 }
 
 footer{
@@ -53,4 +52,28 @@ footer{
 	clear: left;
 	display: block;
 	margin-bottom: 0;
+}
+
+.pandita{
+	margin-left: 250px;
+}
+
+.pandita span{
+	margin:3px;
+}
+
+.img1{
+	background-image: url(../img/a1.jpg);
+}
+
+.img2{
+	background-image: url(../img/a2.jpg);
+}
+
+.img3{
+	background-image: url(../img/a3.jpg);
+}
+
+.img4{
+	background-image: url(../img/a4.jpg);
 }
