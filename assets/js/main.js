@@ -1,28 +1,35 @@
-/*var pictures = ["assets/img/a1.jpg","assets/img/a2.jpg", "assets/img/a3.jpg", "assets/img/a4.jpg"];
+(function eliminarPandas(){
+    var AllPandas = Array.from(document.querySelectorAll(".pandas span"));
+    var div = Array.from(document.querySelectorAll('.pandita div'))
 
-var fotos = document.getElementById("imagenes");
-var ekis = document.createElement("i")
-ekis.setAttribute("class", "fa fa-times")
-ekis.setAttribute("aria-hidden", "true")
+    var restaurar = document.getElementById("restaurar");
+    restaurar.addEventListener("click", function(){
+        AllPandas.forEach(function(e){
+            e.parentElement.classList.remove("nada");
+        });        
+    });
 
 
-pictures.forEach(function(cv){
-	var imagen = document.createElement("img");
-	imagen.setAttribute("class", "panditas");
-	imagen.setAttribute("src", cv);
-	fotos.appendChild(imagen);
+    AllPandas.forEach(function(e){
+        e.addEventListener("click", function(){
+            console.log(e);
+            this.parentElement.classList.add("nada");
+        });
+    });
+
+})()
+
+
+var texto1 = document.getElementById("texto1")
+var origin = document.getElementById("origin");
+origin.addEventListener("click", function(){
+
+texto1.remove(origin)
 });
 
-<i class="fa fa-times" aria-hidden="true"></i>
+var texto2 = document.getElementById("texto2")
+var exting = document.getElementById("exting");
+exting.addEventListener("click", function(){
 
-	var boton =	document.getElementById("mostrar");
-	boton.addEventListener("click", function(e){
-		e.classList.toggle("texto2");
-		});*/
-var texto=document.getElementById("texto2")
-	
-var algo = document.getElementById("mostrar");
-algo.addEventListener("click", function(){
-
-texto.remove(algo)
+texto2.remove(exting)
 });
